@@ -76,7 +76,7 @@ const char* end(const MyString& other)
 
 MyString& operator+=(MyString& ptr1, const MyString& ptr2)
 {
-	for (auto x : ptr2)
+	for (auto& x : ptr2)
 		ptr1 += x;
 
 	return ptr1;

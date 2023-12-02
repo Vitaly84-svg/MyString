@@ -37,17 +37,17 @@ int main()
 
 	vec.push_back(str9);
 
-	for (int i = 0; i < vec.size(); i++)
+	for (auto& x : vec)
 	{
-		std::cout << vec[i] << " ";
+		std::cout << x << " ";
 	}
 	std::cout << std::endl;
 
 	std::sort(vec.begin(), vec.end(), [](const MyString& a, const MyString& b) {return b < a; });
 
-	for (int i = 0; i < vec.size(); i++)
+	for (auto& x : vec)
 	{
-		std::cout << vec[i] << " ";
+		std::cout << x << " ";
 	}
 	std::cout << std::endl;
 
